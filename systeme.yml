@@ -1,0 +1,7 @@
+---
+- Name: Install
+  hosts: all
+  become: yes
+  become_root : root
+  roles:
+          - "roles/common"

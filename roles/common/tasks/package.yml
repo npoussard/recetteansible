@@ -1,0 +1,13 @@
+---
+- Name : Install package
+  apt:
+   name: htop
+   state: present
+
+  apt:
+   name: ntpdate
+   state: present
+
+  apt:
+   name: apache2
+   state: present
