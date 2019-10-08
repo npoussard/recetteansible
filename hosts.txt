@@ -1,9 +1,7 @@
-[all]
-database
-web
-
+#[all]
+#database
+#web
 [database]
 192.168.195.131
-
 [web]
 192.168.195.132
