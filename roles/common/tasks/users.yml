@@ -13,6 +13,12 @@
           createhome: yes
           home: /home/itesciadmin
 
+- name: "SSH autorisé"
+  authorized_key:
+          user: itescia
+          state: present
+          key: ''
+
 - name: "Supression d'un utilisateur existant"
   user:
           name: itescia
