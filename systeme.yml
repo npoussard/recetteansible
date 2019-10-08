@@ -1,6 +1,5 @@
 ---
-- name: Install
-  hosts: all
+- hosts: all
   become: yes
   become_root : root
   roles:
