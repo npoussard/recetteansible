@@ -1,0 +1,11 @@
+---
+mysql_root_password: root
+mysql_databases:
+        - name: ansible_db
+          encoding: latin1
+          collation: latin1_general_ci
+mysql_users:
+        - name: itesciadmin
+          host: "%"
+          password: root
+          priv: "itesciadmin.*:ALL"

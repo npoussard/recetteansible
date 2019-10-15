@@ -5,3 +5,4 @@
   #become_user: root
   roles:
           - roles/common
+          - { role: geerlingguy.mysql }
