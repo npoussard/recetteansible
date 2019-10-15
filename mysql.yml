@@ -7,4 +7,4 @@
           - vars/main.yml
           #- /etc/ansible/roles/geerlingguy.mysql/vars/main.yml
   roles:
-          - { role: geerlingguy.mysql }
+          - { role: geerlingguy.mysql,mysql-backup }
