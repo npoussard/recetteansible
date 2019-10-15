@@ -8,16 +8,17 @@
   user:
           name: "itesciadmin"
           password: '!'
-          groups: sudo, itescia
+          groups: sudo,itescia
           state: present
+          uid: 1001
           createhome: yes
           home: /home/itesciadmin
 
 - name: "SSH autorisé"
   authorized_key:
-          user: itescia
+          user: itesciadmin
           state: present
-          key: ''
+          key: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgQWXn24qnqOrwcePVCqvNf2NujzX912xQ4HMvl4ZJcebSwusZD9puoSR3vXHyx4M2S42loBMKVpYkYHwzAXJheyv2tYQ/WInyasjVgJ2PC1I6tBLAHJrEJ5lO6VU8LByqpw+pxq4bECLqnu97/XFcllsFNLgr55O25mQ9ddL8ZogJO2m55/Ikw+Iy+LYBZ9i+dM9Lm7jK35tSpl0WP1BSFIRPz+VdKmY2bHb+/zU2sYzMNYDLqPJFdTzCd3LLqr8QmXg3E7xZqMH0dlDg4a6B0Mm7z7yF1iLWC37hFQbFYqDc7nIenP20r+VcfW+wq/kfUfS1Z7dDZmqHJAKJ9ZXd root@serveurAnsible'
 
 - name: "Supression d'un utilisateur existant"
   user:

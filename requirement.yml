@@ -1,0 +1,8 @@
+---
+# Installation de mysql Ansible Galaxy
+
+- src: geerlingguy.mysql
+
+# Installation d'Apache Ansible Galaxy
+
+- src: geerlingguy.apache
