@@ -7,4 +7,9 @@
           - vars/main.yml
           #- /etc/ansible/roles/geerlingguy.mysql/vars/main.yml
   roles:
-          - { role: geerlingguy.mysql,mysql-backup }
+          - { role: geerlingguy.mysql }
+  roles:
+          - role: ome.mysql_backup
+            mysql_backup_dir: /var/backups/database
+            mysql_backup_filename_format: "{{ ansible_hostname }}-%Y%m%d.sql.gz"
+            mysql_backup_minimum_expected_size: 100000     

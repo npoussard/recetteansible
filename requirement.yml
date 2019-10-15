@@ -3,6 +3,10 @@
 
 - src: geerlingguy.mysql
 
+# Installation mysql backup
+
+- src: ome.mysql_backup
+
 # Installation d'Apache Ansible Galaxy
 
 - src: geerlingguy.apache
