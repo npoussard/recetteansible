@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  # become: yes
+  #become_user: root
+  vars_files:
+          - vars/main.yml
+          #- /etc/ansible/roles/geerlingguy.mysql/vars/main.yml
+  roles:
+          - { role: geerlingguy.mysql }

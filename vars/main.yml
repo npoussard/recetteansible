@@ -8,4 +8,4 @@ mysql_users:
         - name: itesciadmin
           host: "%"
           password: root
-          priv: "itesciadmin.*:ALL"
+          priv: "ansible_db.*:ALL"
