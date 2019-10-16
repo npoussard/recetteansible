@@ -8,4 +8,5 @@ packages:
         - ntpdate
 
 users:
-
+        - username: itesciadmin
+          password: '!'

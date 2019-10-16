@@ -4,15 +4,22 @@
           name: itescia
           state: present
 
-- name: "Création d'un utilisateur"
+#- name: "Création d'un utilisateur"
+#  user:
+#          name: "itesciadmin"
+#          password: '!'
+#          groups: sudo,itescia
+#          state: present
+#          uid: 1001
+#          createhome: yes
+#          home: /home/itesciadmin
+- name: Création d'un utilisateur
   user:
-          name: "itesciadmin"
-          password: '!'
-          groups: sudo,itescia
-          state: present
-          uid: 1001
+          name: "{{ item.username }}"
+          password: "{{ item.password }}"
           createhome: yes
-          home: /home/itesciadmin
+  with_items: "{{ users }}"
+
 
 - name: "SSH autorisé"
   authorized_key:
