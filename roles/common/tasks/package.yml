@@ -1,5 +1,10 @@
 ---
-- name : Install package loop
+#- name : Install package loop
+#  apt:
+#   name: htop
+#   state: present
+
+- name: "Installation de packages"
   apt:
-   name: htop
-   state: present
+          name: "{{ item }}"
+  loop: "{{ packages }}"

@@ -1,0 +1,11 @@
+---
+#- include: "package.yml"
+#- include: "users.yml"
+packages:
+        - htop
+        - vim
+        - git
+        - ntpdate
+
+users:
+
