@@ -10,3 +10,8 @@ packages:
 users:
         - username: itesciadmin
           password: '!'
+        - username: itesciadmin2
+          password: '!'
+
+user_group:
+        - groups: itescia

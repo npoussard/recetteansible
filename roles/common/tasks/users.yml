@@ -1,8 +1,8 @@
 ---
-- name: "Création de groupe"
-  group:
-          name: itescia
-          state: present
+#- name: "Création de groupe"
+#  group:
+#          name: itescia
+#          state: present
 
 #- name: "Création d'un utilisateur"
 #  user:
@@ -20,6 +20,11 @@
           createhome: yes
   with_items: "{{ users }}"
 
+- name: Création d'un groupe
+  group:
+          name: "{{ item.groups }}"
+          state: present
+  loop: "{{ user_group }}"
 
 - name: "SSH autorisé"
   authorized_key:
