@@ -10,7 +10,8 @@ Modifier les hôtes (adresse IP) dans le fichier `hosts.txt` selon les serveurs 
 
 ## Test du playbook système
 
-Afin de déployer la configuration écrite dans votre playbook, tester la commande : `ansible-playbook systeme.yml -i hosts.txt`
+Afin de déployer la configuration écrite dans votre playbook, tester la commande : 
+`ansible-playbook systeme.yml -i hosts.txt`
 
 # Ansible Rôle: MySQL
 
@@ -29,7 +30,8 @@ Récupèrer et installer le rôle MySQL de geerlingguy (https://galaxy.ansible.c
 
 ## Test du playbook MySQL
 
-Afin de déployer la configuration MYSQL, tester la commande : `ansible-playbook mysql.yml -i hosts.txt`
+Afin de déployer la configuration MYSQL, tester la commande : 
+`ansible-playbook mysql.yml -i hosts.txt`
 
 ## Vérification du test
 
@@ -49,7 +51,8 @@ Aucune exigence particulière, notez que ce rôle nécessite un accès root.
 Dans un fichier `requirement.yml` à la racine de votre projet, vous devez ajouter la source à installer et notamment pour ce projet : `- src: geerlingguy.apache`.
 Dans ce répertoire Github, le fichier et la ligne sont déjà ajoutés.
 
-Récupèrer et installer le rôle Apache de geerlingguy (https://galaxy.ansible.com/geerlingguy/apache)
+Récupèrer et installer le rôle Apache de geerlingguy 
+(https://galaxy.ansible.com/geerlingguy/apache)
 `ansible-galaxy install -r requirement.yml`
 
 ## Test du playbook Apache
@@ -60,4 +63,5 @@ Afin de déployer la configuration Apache, tester la commande : `ansible-playboo
 
 Ajout de l'adresse IP du serveur ciblé Apache dans le fichier hosts du System32 de notre machine Windows (C:\Windows\System32\drivers\etc). Ce fichier est à ouvrir en Administrateur.
 
-Tester l'adresse IP et le numéro de port sur un navigateur web (IE) (http://<adresse IP du serveur>:80)
+Tester l'adresse IP et le numéro de port sur un navigateur web (IE)
+(http://adresse IP du serveur:80)
