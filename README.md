@@ -1,3 +1,17 @@
+# Ansible - automatisation d'opérations pour de sserveurs dans une infrastructure
+
+C'ets un logiciel open source qui automatise le provisionnement, la gestion de configuration et le déploiement d'application et de services.
+Plusieurs modules sont séparés par les fonctions des opérations.
+Ces modules Ansible sont utilisés dans un playbook pour exécuter l'opération
+
+## Installation Ansible
+
+Avant de déployer des services sur vos serveurs, vous devez installer Ansible :
+`sudo apt install ansible`
+
+Vous pouvez cloner ce répertoire avec la commande : 
+`git clone https://github.com/npoussard/recetteansible`
+
 # Ansible Rôle:  Configuration de base sur serveur cible
 
 Un rôle Ansible qui créé des utilisateurs, un groupe, autorise la connexion SSH et supprime des utilisateurs sur des serveurs RHEL/CentOS ou Debian/Ubuntu.
